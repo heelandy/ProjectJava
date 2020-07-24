@@ -2,7 +2,7 @@ package projetoyoutube;
 
 public class Video implements inter {
     private String titel;
-    private int avaliation;
+    private int evaluation;
     private int views;
     private int like;
     private boolean play;
@@ -36,12 +36,12 @@ public class Video implements inter {
         this.views = views;
     }
 
-    public int getAvaliation() {
-        return avaliation;
+    public int getEvaluation() {
+        return evaluation;
     }
 
-    public void setAvaliation(int avaliation) {
-        this.avaliation = avaliation;
+    public void setEvaluation(int evaluation) {
+        this.evaluation = evaluation;
     }
 
     public String getTitel() {
@@ -65,10 +65,14 @@ public class Video implements inter {
 
     public Video(String titel) {
         this.titel = titel;
-        this.avaliation = 1;
+        this.evaluation = 1;
         this.views = 0;
         this.play = false;
         this.like = 0;
     }
    
+    @Override
+    public String toString(){
+    return "Video { " + "titule = "+ titel + ", evaluation = " + evaluation + ", views = " + views + ", like = " + like + ", play = " + play ;   
+    }
 }
