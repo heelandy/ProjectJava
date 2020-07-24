@@ -1,6 +1,6 @@
 package projetoyoutube;
 
-public class Video implements inter {
+public class Video implements Inter {
     private String titel;
     private int evaluation;
     private int views;
@@ -9,7 +9,7 @@ public class Video implements inter {
 
     @Override
     public void Play() {
-
+     this.play = true;
     }
 
     public boolean isPlay() {
@@ -54,13 +54,13 @@ public class Video implements inter {
 
     @Override
     public void Pausa() {
-       
+       this.play = false;
 
     }
 
     @Override
     public void like() {
-       
+       this.like ++;
     }
 
     public Video(String titel) {
