@@ -28,7 +28,7 @@ public class Userlog extends Users {
 
     @Override
     public String toString(){
-     return "User { " + super.toString() +  "\nnome = " + nome + ", idade = " + idade + ", sexo = " + sexo + ", login = " + login + " }" ;
+     return "User { " + super.toString() +  "\nnome = " + nome + ", idade = " + idade + ", sexo = " + sexo + ", login = " + login + " }\n" ;
     }
      
 

@@ -8,9 +8,11 @@ public static void  main(String[] args) {
     
     u[0] = new Userlog("Olivier", 22, "m", "oliv");
     u[1] = new Userlog("Anderson", 28, "m","andre");
-    
-    System.out.println(u[0].toString());
-//  System.out.println(v.toString());
+    Assis a = new Assis(u[0], v);    
+    a.evalua(5);
+   // System.out.println(u[0].toString());
+     System.out.println(a.toString());
+
    }
 
 }

@@ -41,7 +41,10 @@ public class Video implements Inter {
     }
 
     public void setEvaluation(int evaluation) {
-        this.evaluation = evaluation;
+      int next = 0;   
+     next = (this.evaluation + evaluation)/this.views;
+      this.evaluation = evaluation;
+    
     }
 
     public String getTitel() {
